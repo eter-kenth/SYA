@@ -21,6 +21,7 @@ export default {
 	  variants: {
 		extend: {},
 	  },
-	  plugins: [animations],
+	  plugins: [animations ,require('tailwindcss-animated')],
+	 
 
 }

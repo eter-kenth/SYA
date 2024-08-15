@@ -1,0 +1,126 @@
+
+<body>
+	<section class="flex justify-center">
+        <div class="bg-white rounded-3xl  shadow-custom mt-4 w-[250px] 
+        flex justify-center  md:w-[600px]">
+          <h1 class="text-black animate-pulse 
+          animate-infinite animate-duration-[3000ms]
+           flex justify-center md:text-5xl md:h-[60px] md:items-center">
+            <strong>TRAMITES NOTARIALES</strong>
+         </h1>
+        </div>
+    </section>
+
+    <div class="slider-frame shadow-custom">
+        <ul>
+            <li><img src="certificadoN.jpg" alt=""></li>
+            <li><img src="contratoBYM.jpg" alt=""></li>
+            <li><img src="inscripcionP.jpg" alt=""></li>
+            <li><img src="MyU.jpg" alt=""></li>
+            <li><img src="poderesL.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Lato;
+    }
+    
+    .slider-frame {
+        width: 600px; /* Ajuste de la altura del slider */
+        margin: 80px auto 0;
+        overflow: hidden;
+        border-radius: 10%;
+    }
+    
+    .slider-frame ul {
+        display: flex;
+        padding: 0;
+        width: 500%; /* Ancho para 5 imágenes */
+        animation: slide 25s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider-frame img {
+        width: 100%;
+        height: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+        object-fit: cover; /* Para ajustar las imágenes sin distorsión */
+    }
+    
+    @keyframes slide {
+        0% {margin-left: 0;}
+        16% {margin-left: 0;}
+    
+        20% {margin-left: -100%;}
+        36% {margin-left: -100%;}
+    
+        40% {margin-left: -200%;}
+        56% {margin-left: -200%;}
+    
+        60% {margin-left: -300%;}
+        76% {margin-left: -300%;}
+    
+        80% {margin-left: -400%;}
+        100% {margin-left: -400%;}
+    }
+    
+    /* Media Queries para dispositivos móviles */
+    @media (min-width: 410px) and (max-width: 767px) {
+        .slider-frame {
+            width: 80%; /* El slider ocupará el 80% del ancho del contenedor */
+            height: 330px; /* Reducir la altura del slider en móviles */
+            margin: 40px auto 0; /* Reduce el margen superior en móviles */
+        }
+    
+       
+    }
+    
+    @media (min-width:350px)  and (max-width: 400px) {
+
+        .slider-frame {
+            width: 80%; /* El slider será un poco más pequeño en pantallas muy pequeñas */
+            height: 300px; /* Altura aún más reducida en pantallas pequeñas */
+            margin: 40px auto 0; /* Reduce aún más el margen superior */
+        }
+    
+        
+    }
+
+    @media (min-width:300px)  and (max-width: 365px) {
+        .slider-frame {
+            width: 80%; /* El slider será un poco más pequeño en pantallas muy pequeñas */
+            height: 287px; /* Altura aún más reducida en pantallas pequeñas */
+            margin: 40px auto 0; /* Reduce aún más el margen superior */
+        }
+    
+        
+    }
+
+
+    /* Media Queries para el galaxi s8 y pantallas muy pequeñas */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    .slider-frame {
+        width: 500px; /* Ajusta el ancho para tablets */
+        height: 500px; /* Ajusta la altura para tablets */
+        margin: 60px auto 0; /* Reduce ligeramente el margen superior */
+    }
+
+    
+}
+
+   @media screen and (min-width: 768px) and (max-width: 810px) {
+
+
+   }
+    </style>

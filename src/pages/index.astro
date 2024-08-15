@@ -3,24 +3,21 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/header.astro';
 import AsesoriaLegal from '../components/asesoriaLegal.astro';
 import SobreNosotros from '../components/sobrenosotros.astro'
-import TramitesNotariales from '../components/tramitesNotariales.astro'
 import ServiciosLegales from '../components/serviciosLegales.astro'
 import Footer from '../components/footer.astro'
+import Scroll from '../components/scrollMatrites.astro'
 ---
 
 <Layout title="Saballos y asociados">
 
-	<header class="">
-
+	<header>
 		<Header/>
-	
 	</header>
 
 	<body>
-
 		<SobreNosotros/>
 		<AsesoriaLegal/>
-		<TramitesNotariales/>
+		<Scroll/>
 		<ServiciosLegales/>
 	</body>
 
@@ -41,7 +38,4 @@ import Footer from '../components/footer.astro'
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	
-	
-	
 </style>

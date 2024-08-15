@@ -1,17 +1,64 @@
----
 
----
-
-<header class="animate-fade-down animate-once animate-duration-[3000ms] animate-normal">
-    <div class="flex bg-white items-center justify-center flex-col 
-    h-[60px] md:h-[100px] md:flex md:flex-row md:gap-4 md:bg-white 
-    md:w-full  md:mr-0 md:ml-0
-    ">
-        <h1 class="text-sm md:text-3xl">
-            Oficina legal  <strong class="opacity-0 md:opacity-[80%]">|</strong>
+<header class="custom-header">
+    <div class="custom-container">
+        <h1 class="custom-title">
+            Oficina legal 
         </h1>
-
-        <p class="text-sm md:text-2xl">Saballos y asociados</p>
-
+        <strong class="custom-divider">|</strong> 
+        <p class="custom-subtitle">  Saballos y asociados</p>
     </div>
 </header>
+
+<style>
+    /* Animación */
+@keyframes fade-down {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos del Header */
+.custom-header {
+    animation: fade-down 3s ease-out;
+    
+}
+
+.custom-container {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 60px; /* Altura para dispositivos móviles */
+}
+
+.custom-title {
+    font-size: larger; /* Tamaño de fuente para móviles */
+}
+
+.custom-divider {
+    opacity: 100; /* Oculta el divisor en móviles */
+    font-size: larger;
+}
+
+.custom-subtitle {
+    font-size: large; /* Tamaño de fuente para móviles */
+}
+
+/* tablets pequeñas */
+@media screen and (min-width: 768px) and (max-width: 810px) {
+
+    .custom-container{
+        max-width: 100%;
+        
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .custom-container{
+        max-width: 100%;
+        
+    }
+}
+
+</style>

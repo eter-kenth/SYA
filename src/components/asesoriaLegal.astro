@@ -1,30 +1,142 @@
----
----
+<section class="custom-section">
+    <h1 class="custom-title"><strong>ASESORIA LEGAL</strong></h1>
 
-
-
-<section class="md:mt-[130px]">
-
-    <h1 class="text-white flex animate-fade-down animate-once animate-duration-[3000ms] animate-normal justify-center mt-[30px] md:text-5xl md:mt-[70px]"><strong>ASESORIA LEGAL</strong></h1>
-
-    <section class="text-white  gap-6 items-center justify-center mt-[40px] flex-col flex md:flex-row md:gap-[250px] md:mt-2">
-
-        <div class=" animate-fade-down animate-once animate-duration-[3000ms] animate-normal flex items-center justify-center flex-col gap-9 md:mt-[70px]">
-            <img src="/personaNatural.jpg" alt="Imagen persona natural"  class="w-[200px] rounded-full md:w-[400px] border-3 shadow-custom">
-            <p class="text-2xl animate-wiggle animate-infinite animate-duration-[2000ms] animate-normal"><strong>Personas naturales</strong></p>
-
+    <section class="custom-content">
+        <div class="custom-card">
+            <img src="/personaNatural.jpg" alt="Imagen persona natural" class="custom-image">
+            <p class="custom-text"><strong>Personas naturales</strong></p>
         </div>
-        <div class="animate-fade-down animate-once animate-duration-[3000ms] animate-normal flex items-center justify-center flex-col gap-9 md:mt-[70px] ">
-            <img src="/personaJuridica.jpg" alt="Imagen persona juridica" class="w-[200px] rounded-full md:w-[400px] border-3 shadow-custom">
-            <p class="animate-wiggle animate-infinite animate-duration-[2000ms] animate-normal text-2xl"><strong>personas juridicas</strong></p>
-
+        <div class="custom-card">
+            <img src="/personaJuridica.jpg" alt="Imagen persona juridica" class="custom-image">
+            <p class="custom-text"><strong>personas juridicas</strong></p>
         </div>
-
     </section>
-
-
 </section>
 
+
+
+<style>
+/* Animaciones */
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+/* Estilos generales */
+.custom-section {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.custom-title {
+    color: white;
+    margin-top: 30px;
+    font-size: 3rem; /* Ajusta el tamaño de la fuente */
+    animation: fade-down 3s ease-out;
+}
+
+.custom-content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-top: 70px;
+}
+
+.custom-image {
+    width: 500px; /* Aumenta el tamaño de la imagen en PC */
+    border-radius: 50%;
+    border: 3px solid;
+    
+}
+
+.custom-text {
+    font-size: 2rem;
+    animation: wiggle 2s infinite;
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) and (max-width: 1300px) {
+    .custom-section {
+        margin-top: 70px;
+        margin-bottom: 80px;
+    }
+
+    .custom-title {
+        font-size: 3rem;
+        margin-top: 70px;
+    }
+
+    .custom-content {
+        flex-direction: row;
+        gap: 50px;
+        margin-top: 2px;
+    }
+
+    .custom-card {
+        margin-top: 70px;
+    }
+
+    .custom-image {
+        width: 350px; /* Ajusta el tamaño de la imagen en tablets */
+    }
+}
+
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .custom-section {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .custom-title {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .custom-content {
+        gap: 20px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .custom-card {
+        margin-top: 30px;
+    }
+
+    .custom-image {
+        width: 200px; /* Tamaño de imagen en móviles */
+    }
+}
+
+</style>
 
 
 

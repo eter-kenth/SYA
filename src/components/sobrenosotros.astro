@@ -1,19 +1,151 @@
-
-<section class="animate-fade-down animate-once animate-duration-[3000ms] animate-normal md:flex md:flex-row md:justify-center md:mt-10">
-
-    <picture class="flex justify-center">
-        <img src="/SYAlogo.jpg" alt="" class="w-[180px] mt-[30px] md:w-[350px] md:rounded-3xl">
-
+<section class="custom-section">
+    <picture class="custom-picture">
+        <img src="/SYAlogo.jpg" class="custom-image">
     </picture>
-
-    <div class="mt-[20px] ml-5 mr-5 md:w-[800px] md:bg-white 
-    md:rounded-3xl md:shadow-custom 
-    " >
-        <p class="text-white flex text-center md:text-black md:text-xl md:m-7">
+    <div class="custom-content">
+        <p class="custom-text">
             Saballos y Asociados es una firma de abogados comprometida con la excelencia y dedicación en la prestación de servicios legales de alta calidad.
             <br><br>
             Nuestro equipo de abogados altamente calificados y experimentados se esfuerza por proporcionar asesoramiento legal estratégico y soluciones innovadoras a nuestros clientes. En Saballos y Asociados, entendemos que cada caso es único y trabajamos diligentemente para proteger los intereses de nuestros clientes, asegurando resultados favorables y eficientes.
         </p>
     </div>
-
 </section>
+
+
+<style>
+    /* Animaciones */
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos generales */
+.custom-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    animation: fade-down 3s ease-out;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.custom-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-image {
+    width: 400px; 
+    margin-top: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); 
+}
+
+.custom-content {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #fff; /* Fondo blanco para pantallas grandes */
+    border-radius: 20px; /* Bordes redondeados para pantallas grandes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para pantallas grandes */
+    padding: 20px;
+    max-width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); 
+}
+
+.custom-text {
+    color: #000; /* Texto negro para pantallas grandes */
+    font-size: x-large; /* Tamaño de fuente para pantallas grandes */
+    text-align: center;
+    text-justify:center ;
+   
+    
+}
+
+
+/* tablets pequeñas */
+@media screen and (min-width: 768px) and (max-width: 810px) {
+    .custom-section {
+        flex-direction: column; /* Mantén la dirección de columna en el iPad Mini */
+        justify-content: center;
+        margin-top: 10px;
+        padding: 0 15px; /* Aumenta el relleno horizontal para el iPad Mini */
+    }
+
+    .custom-image {
+        width:400px; /* Ajusta el tamaño de la imagen en el iPad Mini */
+        border-radius: 15px;
+    }
+
+    .custom-content {
+        margin-top: 30px;
+        max-width: 90%; /* Asegura que el contenido use el ancho completo disponible */
+        padding: 0 15px; /* Añade más relleno horizontal */
+    }
+
+    .custom-text {
+        font-size: 1.25rem; /* Ajusta el tamaño de fuente para el iPad Mini */
+    }
+}
+
+/* Media Queries para tablets más grandes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .custom-section {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .custom-image {
+        width: 500px; /* Tamaño de imagen en tablets */
+        border-radius: 15px;    
+    }
+
+    .custom-content {
+        margin-top: 30px;
+        max-width: 90%;
+    }
+
+    .custom-text {
+        font-size: 1.5rem; /* Tamaño de fuente para tablets más grandes */
+    }
+}
+
+
+/* Media Queries para móviles */
+@media (max-width: 767px) {
+    .custom-image {
+        width: 250px; /* Tamaño de imagen en móviles */
+        border-radius: 10px; /* Bordes redondeados para móviles */
+    }
+
+    .custom-content {
+        margin-top: 20px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .custom-text {
+        font-size: 1rem; /* Tamaño de fuente para móviles */
+        color: #0f0d0d; /* Texto blanco para móviles */
+    }
+    .custom-section {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+</style>
